@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* CONTACT SECTION */
+.contact {
+  min-height: 100vh;
+ 
+   flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end; /* pushes content to bottom */
+  padding: 80px;
+  background: linear-gradient(to right, #ffc2c2, #f70303);
+  color: rgb(14, 14, 14);
+}
+
+/* LEFT SIDE */
+.contact-info {
+  flex: 1;
+  padding-right: 60px;
+}
+
+.logo {
+  width: 70px;
+  margin-bottom: 15px;
+  
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contact-links a {
+    justify-content: center;
+  display: flex;
+ flex-direction: column;  
+  text-decoration: none;
+color: rgb(6, 6, 6);
+
+  
+}
+
+.contact-links a:hover {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  width: fit-content;
+  
+}
+
+/* RIGHT SIDE FORM */
+.contact-form {
+  flex: 1;
+  margin-top: 3%;
+  background: white;
+  color: black;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 14px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .contact-info {
+    padding-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
